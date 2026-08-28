@@ -8,5 +8,12 @@ public class UserInput {
         // Create an object of Scanner / Instantiation
         //
 
+
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+
+        }  while (i <=10);
     }
 }
