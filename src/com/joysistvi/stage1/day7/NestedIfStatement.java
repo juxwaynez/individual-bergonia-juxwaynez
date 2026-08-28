@@ -36,52 +36,41 @@ public class NestedIfStatement {
 
            */
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("--- Age Categorizer ---");
-        System.out.println("Enter your age: ");
-        int age = scanner.nextInt();
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
 
         // Code Minization for getting the range
-        if (age <= 2) { // 0 - 2
-            System.out.println("Category: Baby");
-        } else if (age <= 12) { // 3 - 12
-            System.out.println("Category: Child");
-        } else if (age <= 19) {
-            System.out.println("Category: Teenager");
-        } else {
-            System.out.println("Invalid Input");
-        }
+        // Validation
 
-        // Early Exit
-        if (!(age >=0 && age <= 120)){
-            System.out.println("Invalid Age");
-            return;
-        }
-
-        if (age <= 2) { // 0 - 2
-            System.out.println("Category: Baby");
-        } else if (age <= 12) { // 3 - 12
-            System.out.println("Category: Child");
-        } else if ( age <= 19) {
-            System.out.println("Category: Teenager");
-        } else {
-            System.out.println("Invalid Input");
-        }
-
-        if (age >= 0 && age <= 120) { // Validation
-            if (age <= 2) { // 0 - 2
-                System.out.println("Category: Baby");
-            } else if (age <= 12) { // 3 - 12
-                System.out.println("Category: Child");
-            } else if ( age <= 19) {
-                System.out.println("Category: Teenager");
+        // Age: 0 - 120
+        String again = "";
+        do {
+            if (age >= 0 && age <= 120) { // Validation
+                if (age <= 2) { // 0 - 2
+                    System.out.println("Category: Baby");
+                } else if (age <= 12) { // 3 - 12
+                    System.out.println("Category: Child");
+                } else if ( age <= 19) {
+                    System.out.println("Category: Teenager");
+                } else if (age <= 39) {
+                    System.out.println("Category: Young Adult");
+                } else if (age <= 59){
+                    System.out.println("Category: Middle-Aged Adult");
+                } else {
+                    System.out.println("Category: Senior");
+                }
             } else {
-                System.out.println("Invalid Input");
+                System.out.println("Invalid Age! Age must be between 0 and 120");
             }
-        } else {
-            System.out.println("Invalid Age! Age must be greater 0");
-        }
+
+            System.out.print("\n Check another age? (y/n): ");
+            again = sc.nextLine();
+        } while (again.equalsIgnoreCase("y"));
+
+        System.out.println("Program ended.");
 
 
 
