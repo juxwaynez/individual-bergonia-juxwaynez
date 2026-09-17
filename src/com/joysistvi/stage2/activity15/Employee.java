@@ -5,6 +5,7 @@ public abstract class Employee {
     protected String name;
     protected double baseSalary;
 
+    // constructor
     public Employee(String name, double baseSalary) {
         this.name = name;
         this.baseSalary = baseSalary;
@@ -16,6 +17,7 @@ public abstract class Employee {
 
     // Concrete method
     public double computeNetSalary() {
+
         return computeSalary() - computeDeductions();
     }
 
