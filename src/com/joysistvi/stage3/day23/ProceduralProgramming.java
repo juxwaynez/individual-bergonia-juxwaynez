@@ -1,4 +1,4 @@
-package com.joysistvi.stage2.discussion.day23;
+package com.joysistvi.stage3.day23;
 
 public class ProceduralProgramming {
 

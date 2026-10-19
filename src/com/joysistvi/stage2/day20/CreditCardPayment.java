@@ -1,4 +1,4 @@
-package com.joysistvi.stage2.discussion.day20;
+package com.joysistvi.stage2.day20;
 
 public class CreditCardPayment extends Payment {
 

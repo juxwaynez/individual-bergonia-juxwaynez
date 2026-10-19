@@ -1,4 +1,4 @@
-package com.joysistvi.stage2.discussion.day21;
+package com.joysistvi.stage2.day21;
 
 public class JumpFunction {
 

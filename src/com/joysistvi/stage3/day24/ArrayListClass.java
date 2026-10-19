@@ -1,4 +1,4 @@
-package com.joysistvi.stage2.discussion.day24;
+package com.joysistvi.stage3.day24;
 
 import java.util.ArrayList; // Import ArrayList from utility package
 
